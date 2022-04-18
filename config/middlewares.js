@@ -1,4 +1,5 @@
 module.exports = [
+  // "strapi::session",
   "strapi::errors",
   {
     name: "strapi::security",
@@ -19,7 +20,6 @@ module.exports = [
   "strapi::logger",
   "strapi::query",
   "strapi::body",
-  "strapi::session",
   "strapi::favicon",
   "strapi::public",
 ];
