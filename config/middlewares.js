@@ -1,5 +1,5 @@
 module.exports = [
-  // "strapi::session",
+  "strapi::session",
   "strapi::errors",
   {
     name: "strapi::security",
@@ -15,7 +15,15 @@ module.exports = [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      enabled: true,
+      header: "*",
+      origin: ["http://localhost:3000"],
+    },
+  },
+  // "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
